@@ -18,4 +18,4 @@ app.use(app.router);
 require('./routes')(app);
 
 console.log("Starting node http server on port 3333")
-app.listen(3333);
+app.listen(process.env.PORT || 3333)
