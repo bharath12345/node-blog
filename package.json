@@ -1,0 +1,32 @@
+{
+    "name": "Blog",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "jade": "*",
+        "poet": "*",
+
+        "grunt": "*",
+
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-htmlmin": "*",
+
+        "grunt-exec": "*",
+        "grunt-jsdoc": "*"
+    },
+    "engines": {
+        "npm": "1.2.x"
+    },
+    "devDependencies": {
+        "grunt-jsdoc": "~0.4.0",
+        "grunt-contrib-htmlmin": "~0.1.3"
+    }
+
+}

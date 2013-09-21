@@ -1,0 +1,24 @@
+extends layoutpost
+
+script.
+    pageTitle = {{ post.title }}
+
+block content
+    div.post
+        h1
+            a(href=post.url)
+                = post.title
+        span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+        | <hr>
+        div.tags
+            - each tag in post.tags
+                a(href=tagUrl(tag))
+                    span.label.label-info #{tag}
+        | <hr>
+        include includes/html/twitter.html
+        | <hr>
+        div#entryBlock
+        div.post.content
+            != post.content
+
+        include includes/html/disqus.html
