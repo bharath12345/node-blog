@@ -2,6 +2,6 @@ extends layout
 
 block content
   h1
-    a(href=tagURL(tag)) posts tagged * #{tag}
+    a(href=tagURL(tag)) Posts tagged * #{tag}
   - each post in posts
     include includes/jade/postSnippet

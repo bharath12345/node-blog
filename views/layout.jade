@@ -33,24 +33,23 @@ html
         include includes/html/index.html
 
         .container
-            .content
-                block content
-            .sidebar
-                h3.projects
-                    a(href='/projects') Projects
-                h3.categories
-                    a(href='/categories') Categories
-                ul
-                    - each cat in getCategories()
-                        li
-                            a(href=categoryURL(cat)) #{cat}
-                h3.tags
-                    a(href='/tags') tags
-                ul
-                    - each tag in getTags()
-                        li
-                            a(href=tagURL(tag)) #{tag}
-            .clear
+            .row
+                .col-md-10
+                    .content
+                        block content
+                .col-md-2
+                    h3.categories
+                        a(href='/categories') Categories
+                    ul
+                        - each cat in getCategories()
+                            li
+                                a(href=categoryURL(cat)) #{cat}
+                    h3.tags
+                        a(href='/tags') Tags
+                    ul
+                        - each tag in getTags()
+                            li
+                                a(href=tagURL(tag)) #{tag}
 
         include includes/html/footer.html
         include includes/html/analytics.html
