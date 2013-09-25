@@ -1,0 +1,52 @@
+!!!
+html
+    head
+        title= "About Bharadwaj"
+        meta(name='description', content='Bharadwaj, JVM, JavaScript engineer and development blog, open source projects, and discussion.')
+
+        meta(charset='utf-8')
+        include includes/html/meta.html
+
+        link(rel='icon', type='image/png', href='/images/favicon.ico')
+
+        include includes/html/css.html
+
+    body(class="claro")
+        include includes/html/javascripts.html
+        include includes/html/topmost-nav.html
+
+        script.
+            var pageTitle = "about";
+            var pageType = "about";
+            var pageUrl = "about";
+
+        .navbar.navbar-static-top
+            ul.nav.navbar-nav
+                li
+                    a.navbar-link(href="/about/work") Work
+                li
+                    a.navbar-link(href="/about/education") Education
+                li
+                    a.navbar-link(href="/about/philosophy") Philosophy
+                li
+                    a.navbar-link(href="/about/timeline") Twitter Timeline
+                li
+                    a.navbar-link(href="/about/movies") Movies
+                li
+                    a.navbar-link(href="/about/books") Books
+                li
+                    a.navbar-link(href="/about/travel") Travel
+                li
+                    a.navbar-link(href="/about/quotes") Favorite Quotes
+                li
+                    a.navbar-link(href="/about/current") Current Affairs
+                li
+                    a.navbar-link(href="/about/slideshare") Slideshare
+
+        .container
+            .content
+                block content
+
+        include includes/html/footer.html
+        include includes/html/analytics.html
+        include includes/html/postpagescripts.html
