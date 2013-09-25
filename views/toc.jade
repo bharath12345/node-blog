@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 Index of posts by date
+    ul
+        - each post in getPosts()
+            li
+                a(href=getPost(post.title)) #{post.title}

@@ -18,6 +18,18 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/toc', function (req, res) {
+        res.render('toc', {
+            title: 'Index of Posts * Bharadwaj'
+        });
+    });
+
+    app.get('/search', function (req, res) {
+        res.render('search', {
+            title: 'Search Posts * Bharadwaj'
+        });
+    });
+
     app.get('/rss', function (req, res) {
         var posts = app.locals.getPosts(0, 5);
         res.setHeader('Content-Type', 'application/rss+xml');
