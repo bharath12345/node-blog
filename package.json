@@ -9,6 +9,7 @@
         "express": "*",
         "jade": "*",
         "poet": "*",
+        "moment": "*",
 
         "grunt": "*",
 

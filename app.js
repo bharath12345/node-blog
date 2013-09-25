@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
-    Poet = require('poet');
+    Poet = require('poet'),
+    moment = require('moment');
 
 var poet = Poet(app, {
     postsPerPage: 5,
