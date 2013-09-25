@@ -59,7 +59,6 @@ module.exports = function(grunt) {
                     removeAttributeQuotes: true
                 },
                 files: {
-                    'views/includes/html/layout.html'         : 'views/includes/html/layout.max.html',
                     'views/includes/html/about.html'          : 'views/includes/html/about.max.html',
                     'views/includes/html/analytics.html'      : 'views/includes/html/analytics.max.html',
                     'views/includes/html/css.html'            : 'views/includes/html/css.max.html',
@@ -72,9 +71,7 @@ module.exports = function(grunt) {
                     'views/includes/html/meta.html'           : 'views/includes/html/meta.max.html',
                     'views/includes/html/postpagescripts.html': 'views/includes/html/postpagescripts.max.html',
                     'views/includes/html/topmost-nav.html'    : 'views/includes/html/topmost-nav.max.html',
-                    'views/includes/html/twitter.html'        : 'views/includes/html/twitter.max.html',
-                    'views/includes/html/index.html'          : 'views/includes/html/index.max.html',
-                    'views/includes/html/post.html'          : 'views/includes/html/post.max.html'
+                    'views/includes/html/twitter.html'        : 'views/includes/html/twitter.max.html'
                 }
             }
         },

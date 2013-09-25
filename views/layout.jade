@@ -30,26 +30,40 @@ html
         include includes/html/fb-sdk.html
         include includes/html/topmost-nav.html
         include includes/html/javascripts.html
-        include includes/html/index.html
+
+        script.
+            var pageTitle = "index";
+            var pageType = "index";
+            var pageUrl = "index";
+
+        if post
+            script.
+                pageTitle = "#{post.title}";
+                pageType = "post";
+                pageUrl = "#{post.url}";
 
         .container
-            .row
-                .col-md-10
-                    .content
-                        block content
-                .col-md-2
-                    h3.categories
-                        a(href='/categories') Categories
-                    ul
-                        - each cat in getCategories()
-                            li
-                                a(href=categoryURL(cat)) #{cat}
-                    h3.tags
-                        a(href='/tags') Tags
-                    ul
-                        - each tag in getTags()
-                            li
-                                a(href=tagURL(tag)) #{tag}
+            if post
+                .content
+                    block content
+            else
+                .row
+                    .col-md-10
+                        .content
+                            block content
+                    .col-md-2
+                        h3.categories
+                            a(href='/categories') Categories
+                        ul
+                            - each cat in getCategories()
+                                li
+                                    a(href=categoryURL(cat)) #{cat}
+                        h3.tags
+                            a(href='/tags') Tags
+                        ul
+                            - each tag in getTags()
+                                li
+                                    a(href=tagURL(tag)) #{tag}
 
         include includes/html/footer.html
         include includes/html/analytics.html
