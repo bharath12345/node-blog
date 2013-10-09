@@ -17,9 +17,8 @@ Like the few book reviews that I have done before on my blog, this is a quick re
 1. **Why study Algorithms and Data Structures? Why are they important?**
 
 	Computers, no matter how powerful, have space and time constraints. Poorly thought through implementations for computing problems can take years to compute even when computing resources are massive. For example -
-	<p align="center">
-![image](http://bharathblogs.in/images/algorithms/timecompare.png)
-	</p>
+
+	![image](http://bharathblogs.in/images/algorithms/timecompare.png)
 
 2. **Why learn, re-learn algorithms?**
 
@@ -48,10 +47,9 @@ Like the few book reviews that I have done before on my blog, this is a quick re
 7. **What is the base of log when we are talking about complexities of algorithms? Why?**
 
 	Base-2. In terms of Big-O, the base doesn't matter because the change of base formula implies that it's only a constant factor difference. That is logarithms from base 10 or base 2 or base e can be exchanged (transformed) to any other base with the addition of a constant. The critical thing to understand is that logarithms (of any base) increase slowly with the increase of N. However, observe this table of log values… (with respect to complexity of algorithms, the value of N can never be fractional or negative anyway...)
-	<p align="center">
+
 	![image](http://bharathblogs.in/images/algorithms/log.png)
-	</p>
-	
+
 8. **What does Java Arrays.sort() implement?**
 
 	Mergesort till Java6. TimSort from Java7 onwards...
@@ -59,9 +57,8 @@ Like the few book reviews that I have done before on my blog, this is a quick re
 9. **Order of growth graph?**
 
 	Here is the log-log plot (both size(N) x-axis and time(T) y-axis are in logarithms)
-	<p align="center">
+
 	![image](http://bharathblogs.in/images/algorithms/orderofgrowth.png)
-	</p>
 
 10. **Example of each -**
 
@@ -180,9 +177,8 @@ There are many applications where we want to use differ- ent orders for the obje
 	Search and insert operations in a 2-3 tree with N keys are guaran- teed to visit at most logN nodes.
 
 7. **Performance of Red-Black BST**
-	<p align="center">
+
 	![image](http://bharathblogs.in/images/algorithms/symbolperf.png)
-	</p>
 
 8. **Why use hashing?**
 
@@ -229,14 +225,12 @@ There are many applications where we want to use differ- ent orders for the obje
 	Both use separate chaining. Google guava libraries have some implementations for linear probing
 
 15. **Space usage of BST vs. separate chaining vs. linear probing?**
-	<p align="center">
+
 	![image](http://bharathblogs.in/images/algorithms/space.png)
-	</p>
 
 16. **Performance of hashing vis-a-vis trees?**
-	<p align="center">
+
 	![image](http://bharathblogs.in/images/algorithms/hashperf.png)
-	</p>
 
 17. **What would be a good data-structure to use for counting all people within a income range (say 10k to 20k) in an age group (say 25 to 35 years) among a million people?**
 
