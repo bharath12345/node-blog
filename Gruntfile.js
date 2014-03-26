@@ -59,7 +59,6 @@ module.exports = function(grunt) {
                     removeAttributeQuotes: true
                 },
                 files: {
-                    'views/includes/html/analytics.html'      : 'views/includes/html/analytics.max.html',
                     'views/includes/html/css.html'            : 'views/includes/html/css.max.html',
                     'views/includes/html/disqus.html'         : 'views/includes/html/disqus.max.html',
                     'views/includes/html/facebook.html'       : 'views/includes/html/facebook.max.html',
