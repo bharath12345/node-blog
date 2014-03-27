@@ -92,6 +92,11 @@ module.exports = function (app) {
             title: 'Kagga * Bharadwaj'
         });
     });
+    app.get('/about/torrents', function (req, res) {
+        res.render('about/torrents', {
+            title: 'Torrents * Bharadwaj'
+        });
+    });
 
     /*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*/
 
