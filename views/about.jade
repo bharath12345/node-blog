@@ -14,13 +14,14 @@ html
     body(class="claro")
         include includes/html/javascripts.html
         include includes/html/topmost-nav.html
+        include includes/html/fork-on-github.html
 
         script.
             var pageTitle = "about";
             var pageType = "about";
             var pageUrl = "about";
 
-        .navbar.navbar-default(style="padding-left: 50px")
+        .navbar.navbar-default(style="padding-left: 10em; margin-bottom: 0px")
             ul.nav.navbar-nav
                 li
                     a.navbar-link(href="/about/work") Work
