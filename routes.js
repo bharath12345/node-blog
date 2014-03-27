@@ -82,6 +82,16 @@ module.exports = function (app) {
             title: 'My work * Bharadwaj'
         });
     });
+    app.get('/about/resources', function (req, res) {
+        res.render('about/resources', {
+            title: 'Resources * Bharadwaj'
+        });
+    });
+    app.get('/resources/kagga', function (req, res) {
+        res.render('resources/kagga', {
+            title: 'Kagga * Bharadwaj'
+        });
+    });
 
     /*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*/
 
